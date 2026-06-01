@@ -36,11 +36,12 @@ async def button(bot, update):
             reply_markup=Translation.TECH_VJ_HELP_BUTTONS,
             # disable_web_page_preview=True
         )
-   elif update.data == "about":
-    await update.answer("About button clicked!", show_alert=True)
-            reply_markup=Translation.TECH_VJ_ABOUT_BUTTONS,
-            # disable_web_page_preview=True
-        )
+    elif update.data == "about" 
+        await update.message.edit(
+    
+text=Translation.TECH_VJ_ABOUT_TEXT,
+    reply_markup=Translation.TECH_VJ_ABOUT_BUTTONS,
+)
     elif "close" in update.data:
         await update.message.delete(True)
 
