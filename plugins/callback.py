@@ -38,8 +38,7 @@ async def button(bot, update):
         )
     elif update.data == "about": 
         await update.message.edit(
-    
-    text=Translation.TECH_VJ_ABOUT_TEXT,
+        text=Translation.TECH_VJ_ABOUT_TEXT,
     reply_markup=Translation.TECH_VJ_ABOUT_BUTTONS,
 )
     elif "close" in update.data:
